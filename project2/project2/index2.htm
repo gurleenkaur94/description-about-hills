@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="jquery/slider.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".slider").cycle({
+					fx:"zoom,toss,fade,scrollRight,turnUp",
+					next:".next",
+					prev:".prev"
+			});
+			$("li").click(function(){
+				$("li").removeClass("active");
+				$(this).addClass("active");
+				var id=$(this).attr("id");
+				var total=657*id;
+				$("html").animate({scrollTop:total},2000);
+			});
+			$(".img").click(function(){
+				$(".menu").animate({right:"0px"},1000);
+				$(".delete").show(1000);
+				$(".nav").hide();
+			});
+			$(".del").click(function(){
+				$(".menu").animate({
+					right:"-135px"
+				},1000);
+				$(".delete").hide();
+				$(".nav").show("1000");
+			});
+			
+		});
+			</script>
+	<script>
+		$(document).ready(function(){
+		$(".imge").click(function(){
+				$(".galary").show(2000);
+				$(".image").fadeIn(2000);
+				var a=$(this).attr("src");
+				$(".big").attr("src",a);
+			});
+
+			$(".galary").click(function(){
+				$(".galary").hide();
+				$(".image").hide(1000);
+			});
+			$(window).scroll(function(){
+				var top=$("body").scrollTop();
+				var top=$("html").scrollTop();
+				if (top>300) {
+					$(".top").show();
+				}
+				else
+				{
+					$(".top").hide();
+				}
+			});
+			$(window).scroll(function(){
+				var top=$("body").scrollTop();
+				var top=$("html").scrollTop();
+				if (top>657*3+328) {
+					$("li").removeClass("active");
+					$("#4").addClass("active");
+				}
+				else if (top>657*2+328) {
+					$("li").removeClass("active");
+					$("#3").addClass("active");
+				}
+				else if (top>657*1+328){
+					$("li").removeClass("active");
+					$("#2").addClass("active");
+				}
+				else if (top>657*0+328) {
+					$("li").removeClass("active");
+					$("#1").addClass("active");
+				}
+				else{
+					$("li").removeClass("active");
+					$("#0").addClass("active");
+				}
+			});
+			$(".top").click(function(){
+				$("body").animate({scrollTop:0},1000);
+				$("html").animate({scrollTop:0},1000);
+						});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="top">
+		<img src="images/arrow.png" class="icon">
+	</div>
+	<div class="galary"></div>
+		<div class="image">
+				<img src="images/m7.jpg" class="big">
+			</div>	
+	<div class="nav">
+		<img src="images/scroll.png" class="img">
+	</div>
+	<div class="delete">
+			<img src="images/d2.png" class="del">
+	</div>
+	<div class="menu">
+		<ol>
+			<li id="0" class="active">Home</li>
+			<li id="1">About Us</li>
+			<li id="2">Places</li>
+			<li id="3">Gallary</li>
+			<li id="4">Demography</li>
+			<li id="5">Contact</li>
+		</ol>
+	</div>
+	<div class="f box">
+		<h1 style="position: absolute;z-index: 999999; left: 120px;">Himachal Pradesh</h1>
+		<h3 style="position: absolute;z-index: 999999; top: 30px; left: 265px;">State of India</h3>
+		<div class="main">
+		<div class="next"> >>> </div>
+		<div class="prev"> <<< </div>
+		<div class="slider">
+		<img id="a" src="images/w2.jpg" height="657px" width="100%">
+		<img id="a" src="images/s1.jpg" height="657px" width="100%">
+		<img id="a" src="images/6.jpg" height="657px" width="100%">
+		<img id="a" src="images/w1.jpg" height="657px" width="100%">
+		<img id="a" src="images/dhrm.jpg" height="657px" width="100%">
+		</div>
+		</div>
+	</div>
+	<div class="s box">
+		<h1>About Us</h1>
+		<p style=" padding: 10px;">Himachal Pradesh ([ɦɪmaːtʃəl prədeːʃ] (About this sound listen); literally "snow-laden province") is a state in northern part of India. Situated in the Western Himalayas, it is bordered by states of Jammu and Kashmir on the north, Punjab on the west, Haryana on the southwest, Uttarakhand on the southeast, and Tibet on the east. At its southernmost point, it also touches the state of Uttar Pradesh. The state's name was coined from the Sanskrit—Him means 'snow' and achal means 'land' or 'abode'—by acharya Diwakar Datt Sharma, one of the state's eminent Sanskrit scholars.The state is spread across valleys. Many perennial rivers flow in the state with numerous hydropower plants producing surplus electricity that is sold to other states, such as Delhi, Punjab and West Bengal. The state has one of the highest per-capita incomes among the Indian states and union territories.[12]Shimla district has the largest urban population in the state at 25%. The villages have good connectivity with roads and public health centres. Practically all houses have a toilet and 100% hygiene has been achieved in the state.[13] Notable actions by the state government include a ban on polyethylene bags[14] and tobacco products.[15] According to a survey of CMS - India Corruption Study 2017, Himachal Pradesh is India's least corrupt state.
+			<br>
+		State - India<br>
+Statehood - 25 January 1971†<br>
+Capitals - Shimla
+Dharamshala (Second Capital in Winter)<br>
+12 Districts	<br>
+List[show]<br>
+Government<br>
+ • Governor	Acharya Dev Vrat[1]<br>
+ • Chief Justice	Justice Sanjay Karol (Acting)<br>
+ • Chief Minister	Jai Ram Thakur (BJP)<br>
+ • Legislature	Unicameral[2] (68 seats)<br>
+ • Parliamentary constituency	4<br>
+Area
+ • Total	55,673 km2 (21,495 sq mi)<br>
+Area rank	18th[3]<br>
+Population (2011)[4]<br>
+ • Total	6,864,602<br>
+ • Rank	21st<br>
+ • Density	123/km2 (320/sq mi)<br>
+Language<br>
+ • Official	Hindi[5]<br>
+ • Additional official	English[5]</p>
+	</div>
+	<div class="t box">
+		<h1 class="a">Places</h1>
+		<div class="div1" style=" float: left;">
+			<a href="https://www.google.co.in/search?q=manali&rlz=1C1CHBF_enIN814IN814&oq=manali&aqs=chrome.0.69i59j0l2j69i60l3.1247j0j7&sourceid=chrome&ie=UTF-8">
+			<img id="t" src="images/manali.jpg" height="300" width="300">
+		</a>
+		</div>
+		<div class="div1" style=" margin-left: 330px;">
+			<a href="https://www.google.co.in/search?q=shimla&rlz=1C1CHBF_enIN814IN814&oq=shimla&aqs=chrome.0.69i59j69i60j69i61j69i60j0l2.1072j0j7&sourceid=chrome&ie=UTF-8">
+			<img id="t" src="images/s1.jpg" height="300" width="300">
+		</a>
+		</div>
+		<div class="div1" style="margin-left: 660px; margin-top: -306px;">
+			<a href="https://www.google.co.in/search?q=dharamshala&rlz=1C1CHBF_enIN814IN814&oq=dharamshala&aqs=chrome..69i57j69i60j69i61j0l3.4570j0j7&sourceid=chrome&ie=UTF-8">
+			<img id="t" src="images/dhrm.jpg" height="300" width="300">
+			</a>
+		</div>
+		<div class="div1" style="margin-left: 993px; margin-top: -306px;">
+			<a href="https://www.google.co.in/maps/place/Dalhousie,+Himachal+Pradesh/@32.5402867,75.9385775,13z/data=!3m1!4b1!4m5!3m4!1s0x391c9138637f1ae1:0xbac8f1954c198c20!8m2!3d32.5387385!4d75.9709978">
+			<img id="t" src="images/dal.jpg" height="300" width="300">
+			</a>
+		</div>
+<div class="div1" style="border:groove;  height: 250px; width: 300px; margin-top: 5px;">
+			<h1 class="a">Manali</h1>
+			<p class="a">
+		<b>Manali, Himachal Pradesh</b>
+Town in Himachal Pradesh
+Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center and honeymoon destination. Set on the Beas River, it’s a gateway for skiing in the Solang Valley and trekking in Parvati Valley. </p>
+</div>
+<div class="div1" style="border:groove; margin-left: 330px; height: 250px; width: 300px; margin-top: -255px;">
+		<h1 class="a">Shimla</h1>
+		<p class="a"><b>Shimla
+City in Himachal Pradesh</b>
+Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills. Once the summer capital of British India, it remains the terminus of the narrow-gauge Kalka-Shimla Railway, completed in 1903. It’s also known for the handicraft shops that line The Mall, a pedestrian avenue, as well as the Lakkar Bazaar, a market specializing in wooden toys and crafts.</p>
+</div>
+<div class="div1" style="border:groove; margin-left: 660px; margin-top: -255px; height: 250px; width: 300px;">
+				<h1 class="a">Dharamshala</h1>
+				<p class="a"><b>Dharamshala Municipality in Himachal Pradesh</b>
+Dharamshala is a city in the Indian state of Himachal Pradesh. Surrounded by cedar forests on the edge of the Himalayas, this hillside city is home to the Dalai Lama and the Tibetan government-in-exile. The Thekchen Chöling Temple Complex is a spiritual center for Tibetan Buddhism, while the Library of Tibetan Works and Archives houses thousands of precious manuscripts.</p>
+</div>
+<div class="div1" style="border:groove; margin-left: 994px; height: 250px; width: 300px; margin-top: -255px;">
+				<h1 class="a">Dalhousie</h1>
+				<p class="a">
+				<b>	Dalhousie India</b> is a high-altitude town spread across 5 hills near the Dhauladhar mountain range in the north Indian state of Himachal Pradesh. It's home to colonial-era buildings, including St. Francis and St. John’s churches, which date back to the rule of the British Raj in the 1800s. A trek up Dainkund Peak leads to Pholani Devi Temple. To the north, Subhash Baoli is a peaceful area with pine trees and panoramic views.
+				</p>
+				</div>
+				</div>
+		<div class="fo box">
+		<h1>Gallary</h1>
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge"><img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				<img src="images/m11.jpg" class="imge">
+				<img src="images/m6.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m7.jpg" class="imge">
+				<img src="images/m8.jpg" class="imge">
+				<img src="images/m9.jpg" class="imge">
+				<img src="images/m10.jpg" class="imge">
+				
+		</div>
+
+	</div>
+	<div class="fi box">
+		<h1>Demographics</h1>
+		<p>
+			<b>Population</b><br>
+			Himachal Pradesh has a total population of 6,864,602 including 3,481,873 males and 3,382,729 females as per the final results of the Census of India 2011. This is only 0.57 per cent of India's total population, recording a growth of 12.81 per cent
+		<br>	In the census, the state is placed 21st on the population chart, followed by Tripura at 22nd place.[88] Kangra district was top ranked with a population strength of 1,507,223 (21.98%), Mandi district 999,518 (14.58%), Shimla district 813,384 (11.86%), Solan district 576,670 (8.41%), Sirmaur district 530,164 (7.73%), Una district 521,057 (7.60%), Chamba district 518,844 (7.57%), Hamirpur district 454,293 (6.63%), Kullu district 437,474 (6.38%), Bilaspur district 382,056 (5.57%), Kinnaur district 84,298 (1.23%) and Lahaul Spiti 31,528 (0.46%)
+		</p>
+		<br><br>
+		<p><b>Languages</b>
+			<br>
+Hindi is the official language of Himachal Pradesh and is spoken by the majority of the population as a lingua franca. English is given the status of an additional official language.[5] Most of the languages spoken natively belong to the group of the Himachali languages. According to the 2001 Census of India, the languages spoken in the state in descending order of native speakers are Hindi, spoken by 89.01% of the population (including Himachali languages as dialects of Hindi); followed by Punjabi (5.99%), Nepali (1.16%) and Kinnauri (1.06%).</p>
+<img src="images/lang.png" style="float: right; height: 300px; width: 200px;">
+<br><br>
+<p><b>Religion</b>
+	<br>it is the major religion in Himachal Pradesh. More than 95% of the total population adheres to the Hindu faith, the distribution of which is evenly spread throughout the state.[94] Himachal Pradesh has the highest proportion of Hindu population among all the states and union territories in India.[95]
+
+Other religions that form a small percentage are Islam, Sikhism and Buddhism. Muslims are mainly concentrated in Sirmaur, Chamba, Una and Solan districts where they form 2.53-6.27% of the population.[94] Sikhs mostly live in towns and cities and constitute 1.16% of the state population. The Buddhists, who constitute 1.15%, are mainly natives and tribals from Lahaul and Spiti, where they form a majority of 62%, and Kinnaur, where they form 21.5%.</p>
+<br><br>
+<p><b>Culture of Himachal Pradesh</b><br>
+Traditional home, Manali-Nako Village
+Himachal Pradesh was one of the few states that had remained largely untouched by external customs, largely due to its difficult terrain. With remarkable economic and social advancements, the state has changed very rapidly.[96] Himachal Pradesh is a multireligious, multicultural as well as a multilingual state like other Indian states. Western Pahari languages also known as Himachali languages are widely spoken in the state. Some of the most commonly spoken individual languages are Kangri, Mandeali, Kulvi, Chambeali, Bharmauri and Kinnauri.[97] The Hindu communities residing in Himachal include the Brahmins, Rajputs, Kayasthas, Sunars, Kannets, Rathis and Kolis.[98] The tribal population of the state consists mainly of Gaddis, Gujjars, Kanauras, Pangwalas, Bhots, Swanglas and Lahaulas.[98][99]
+
+Himachal is well known for its handicrafts. The carpets, leather works, Kullu shawls, Kangra paintings, Chamba Rumals, stoles, embroidered grass footwear (Pullan chappal), silver jewelry, metal-ware, knitted woolen socks, Pattoo, basketry of cane and bamboo (Wicker and Rattan) and woodwork are among the notable ones.[100][101][102] Of late, the demand for these handicrafts has increased within and outside the country.[101] Himachali caps of various colour bands are also well-known art work of the local people, and are often treated as a symbol of the Himachali identity.</p>
+
+	</div>
+
+	<div class="si box">
+		<h1>Contact</h1>
+		<div style="height: 95%;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472279.894882229!2d75.05100233160374!3d31.800517844651417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal+Pradesh!5e0!3m2!1sen!2sin!4v1537980837437" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	</div>
+
+</body>
+</html>
